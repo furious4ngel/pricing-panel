@@ -1,2 +1,2 @@
-# pricing-panel
-three-tier pricing panel
+# Pricing Panel
+This is my first project submission for the Web Developer Bootcamp by Colt Steele. It is a 3-tier pricing panel. The panel's design was created by [Travis Williamson](https://codepen.io/travisw/pen/EvbKwd?editors=0010).
