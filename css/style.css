@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-width: 17.5rem;
+  font: 16px / 1.5 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 2rem 1.5rem;
+  background-color: #549ff8;
+}
+
+.pricing-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 58rem;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 0.5em 1em 0.25em #0003;
+}
+
+.pricing-panel div {
+  flex: 1 1 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-panel div:nth-of-type(2) {
+  border-top: 0.0625em solid #8882;
+  border-bottom: 0.0625em solid #8882;
+}
+
+.pricing-panel img {
+  width: 100%;
+  max-width: 22rem;
+}
+
+.pricing-panel p:first-of-type {
+  margin: 0.75rem 0 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  color: #757575;
+}
+
+.pricing-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-panel ul li {
+  padding: 1rem 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #1763db;
+}
+
+.pricing-panel ul li:first-child {
+  border-top: 0.0625em solid #8882;
+  border-bottom: 0.0625em solid #8882;
+}
+
+.pricing-panel ul li:last-child {
+  border-bottom: 0.0625em solid #8882;
+}
+
+.pricing-panel p:last-of-type {
+  margin: 1rem 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #1763db;
+}
+
+.pricing-panel button {
+  padding: 0.75em 2em;
+  text-transform: inherit;
+  border: 0.0625em solid #9ac7fe;
+  border-radius: 0.6em;
+  outline-offset: 0.125em;
+  transition:
+      background-color 250ms,
+      outline-offset 175ms;
+}
+
+.pricing-panel div:not(:nth-of-type(2)) button {
+  background-color: #fff;
+  color: #1763db;
+}
+
+.pricing-panel div:nth-of-type(2) button {
+  background-color: #3ea0f9;
+  color: #fff;
+}
+
+.pricing-panel button:focus {
+  outline: 0.125em solid #000;
+  outline-offset: 0;
+}
+
+.pricing-panel button:hover {
+  cursor: pointer;
+}
+
+.pricing-panel div:not(:nth-of-type(2)) button:hover {
+  background-color: #3ea0f925;
+}
+
+.pricing-panel div:nth-of-type(2) button:hover {
+  background-color: #2090f8;
+}
+
+@media only screen and (min-width: 58rem) and (orientation: landscape) {
+  .pricing-panel div {
+    flex: 1;
+    padding: 2rem 3rem;
+  }
+
+  .pricing-panel div:nth-of-type(2) {
+    border: 0;
+    border-left: 0.0625em solid #8882;
+    border-right: 0.0625em solid #8882;
+  }
+}
