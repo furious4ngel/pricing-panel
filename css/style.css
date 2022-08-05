@@ -12,11 +12,15 @@ html {
 
 body {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   min-height: 100%;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   background-color: #549ff8;
+}
+
+main {
+  align-self: center;
 }
 
 .pricing-panel {
@@ -121,6 +125,31 @@ body {
 
 .pricing-panel div:nth-of-type(2) button:hover {
   background-color: #2090f8;
+}
+
+footer {
+  align-self: flex-end;
+  width: 100%;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 58rem;
+}
+
+footer a {
+  display: block;
+  height: 2rem;
+  margin: 0 0 0 auto;
+  width: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1em 0.25em #0003;
+  transition: transform 250ms ease-in-out;
+}
+
+footer a:hover {
+  transform: rotate(-40deg);
 }
 
 @media only screen and (min-width: 58rem) and (orientation: landscape) {
