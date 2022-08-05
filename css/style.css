@@ -34,7 +34,7 @@ body {
 
 .pricing-panel div {
   flex: 1 1 100%;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
   text-align: center;
   text-transform: uppercase;
 }
