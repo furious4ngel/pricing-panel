@@ -43,8 +43,7 @@ main {
   text-transform: uppercase;
 }
 
-.pricing-panel div:nth-of-type(2) {
-  border-top: 0.0625em solid #e1f1ff;
+.pricing-panel div:not(:last-of-type) {
   border-bottom: 0.0625em solid #e1f1ff;
 }
 
@@ -73,12 +72,12 @@ main {
   color: #016ff9;
 }
 
-.pricing-panel ul li:first-child {
+.pricing-panel li:not(:last-of-type) {
   border-top: 0.0625em solid #e1f1ff;
-  border-bottom: 0.0625em solid #e1f1ff;
 }
 
-.pricing-panel ul li:last-child {
+.pricing-panel li:last-of-type {
+  border-top: 0.0625em solid #e1f1ff;
   border-bottom: 0.0625em solid #e1f1ff;
 }
 
@@ -100,12 +99,12 @@ main {
       outline-offset 175ms;
 }
 
-.pricing-panel div:not(:nth-of-type(2)) button {
+.pricing-panel button:not(.is-featured) {
   background-color: #fff;
   color: #348efe;
 }
 
-.pricing-panel div:nth-of-type(2) button {
+.pricing-panel .is-featured {
   background-color: #48aaff;
   color: #fff;
 }
@@ -119,11 +118,11 @@ main {
   cursor: pointer;
 }
 
-.pricing-panel div:not(:nth-of-type(2)) button:hover {
+.pricing-panel button:not(.is-featured):hover {
   background-color: #e1f1ff;
 }
 
-.pricing-panel div:nth-of-type(2) button:hover {
+.pricing-panel .is-featured:hover {
   background-color: #269aff;
 }
 
@@ -166,9 +165,8 @@ footer a:hover {
     padding: 2rem 3rem;
   }
 
-  .pricing-panel div:nth-of-type(2) {
+  .pricing-panel div:not(:last-of-type) {
     border: 0;
-    border-left: 0.0625em solid #e1f1ff;
     border-right: 0.0625em solid #e1f1ff;
   }
 }
