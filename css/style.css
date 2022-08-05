@@ -145,7 +145,15 @@ footer a {
   width: 2rem;
   border-radius: 50%;
   box-shadow: 0 0 1em 0.25em #0003;
-  transition: transform 250ms ease-in-out;
+  outline-offset: 0.25em;
+  transition:
+      transform 250ms ease-in-out,
+      outline-offset 175ms;
+}
+
+footer a:focus {
+  outline: 0.125em solid #000;
+  outline-offset: 0.125em;
 }
 
 footer a:hover {
