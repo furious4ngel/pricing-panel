@@ -44,6 +44,7 @@ main {
 .pricing-panel div {
   flex: 1 1 100%;
   padding: 3rem 1rem;
+  letter-spacing: 0.0625em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -60,7 +61,6 @@ main {
 .pricing-panel p:first-of-type {
   margin: 0.75rem 0 2.5rem;
   font-weight: 600;
-  letter-spacing: 0.0625em;
   color: #888;
 }
 
