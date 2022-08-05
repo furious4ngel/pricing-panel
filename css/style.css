@@ -19,6 +19,11 @@ body {
   background-color: #609aff;
 }
 
+header {
+  height: 0;
+  width: 100%;
+}
+
 main {
   align-self: center;
 }
