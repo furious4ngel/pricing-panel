@@ -70,7 +70,7 @@ main {
   list-style: none;
 }
 
-.pricing-panel ul li {
+.pricing-panel li {
   padding: 1rem 0;
   font-size: 0.9em;
   font-weight: 600;
