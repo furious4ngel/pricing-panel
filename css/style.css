@@ -123,10 +123,6 @@ main {
   outline-offset: 0;
 }
 
-.pricing-panel a:hover {
-  cursor: pointer;
-}
-
 .pricing-panel a:not(.is-featured):hover {
   background-color: #e1f1ff;
 }
